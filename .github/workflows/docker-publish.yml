@@ -33,7 +33,6 @@ jobs:
         uses: docker/metadata-action@v6
         with:
           images: ${{ env.GHCR_IMAGE }}
-          tags: type=ref,event=tag
 
       - name: Build and push
         uses: docker/build-push-action@v7
